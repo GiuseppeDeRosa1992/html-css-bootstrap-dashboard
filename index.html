@@ -44,27 +44,81 @@
     
     <!-- MAIN CHE COMPRENDE UNA SIDEBAR A SINISTRA E POI A DESTRA UNA RIGA CON DUE COLONNE DA 8 E 4 E SOTTOCOLONNE DA 12 CON DUE SEZIONI CIASCUNA TUTTO 90VH -->
     <main>
-        <div class="container-fluid d-flex h-100 w-100">
+        <div class="container-fluid d-flex h-100 p-0">
             <!-- SEZIONE SIDEBAR -->
             <div class="row w-100">
-                <div class="col-3 bg-dark">
-                    <section id="sidebar p-3">
-                        <div class="row flex-column h-100 justify-content-between">
-                            <div class="col-4">
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fa-solid fa-house text-white p-2">Home</i>
-                                </a>
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fa-solid fa-chart-simple text-white p-2">Stats</i>
-                                </a>
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fa-solid fa-signal text-white p-2">Signals</i>
-                                </a>
+                <div class="col-2 bg-dark pe-0">
+                    <section id="sidebar row h-100">
+                            <div class="col-12 p-0">
+                                <div class="text-center my-fs">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-house text-white">
+                                            <span class="ms-1">Home</span>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="text-center my-fs">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-chart-simple text-white">
+                                            <span class="ms-1">Stats</span>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="text-center my-fs">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-signal text-white ps-3">
+                                            <span class="ms-1">Signals</span>
+                                        </i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <i class="fa-solid fa-gear text-white p-2">Admin</i>
+                            <div class="col-12 p-0">
+                                <div class="text-center my-fs">
+                                    <i class="fa-solid fa-gear text-white">
+                                        <span class="ms-1">Admin</span>
+                                    </i>
+                                </div>
                             </div>
-                        </div>
+                    </section>
+                </div>
+                <div class="col-10 pe-0">
+                    <!-- SEZIONE CONTENT CON TOP E BOTTOM -->
+                    <section id="content">
+                        <!-- SEZIONE CONTENT TOP -->
+                        <section id="content-top width-100">
+                            <div class="row py-2 bg-primary">
+                                <div class="col-6 p-0 text-white">
+                                    <h2 class="d-inline-block">Boolean</h2>
+                                    <span class="badge rounded-pill bg-secondary my-fs">Piano blaze</span> <br>
+                                    <span class="badge rounded-pill bg-secondary my-fs">3 app</span>
+                                    <i class="fa-solid fa-angles-right my-fs"></i>
+                                    <span class="badge rounded-pill bg-secondary my-fs">Boolean mobile app</span>
+                                    <span class="badge rounded-pill bg-secondary my-fs">Boolean web app</span>
+                                    <span class="badge rounded-pill bg-secondary my-fs">Boolean blog app</span>
+                                </div>
+                                <div class="col-4 text-white p-0">
+                                    <p class="p-0 my-fs">Studenti online negli ultimi 30 minuti</p>
+                                    <h4>125</h4>
+                                </div>
+                                <div class="col-2 text-white p-0">
+                                    <span class="my-fs">Nuovo Studente</span>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-primary p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-regular fa-square-plus fs-5"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- SEZIONE CONTENT BOTTOM -->
+                        <section id="content-bottom py-5">
+                            <p>b</p>
+                        </section>
                     </section>
                 </div>
             </div>
