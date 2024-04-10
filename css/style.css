@@ -17,5 +17,9 @@ main div.col-2.bg-dark.pe-0 {
 }
 
 .my-fs {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+}
+
+.my-w-10 {
+    width: 10%;
 }
