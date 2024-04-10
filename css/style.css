@@ -4,7 +4,16 @@ header {
 }
 
 main {
-    height: 92vh;
+    height: calc(100vh - 8vh);
+}
+
+main div.col-2.bg-dark.pe-0 {
+    height: calc(100vh - 8vh);
+}
+
+.vh-90 {
+    height: calc(100vh - 8vh);
+    overflow: auto;
 }
 
 .my-fs {
