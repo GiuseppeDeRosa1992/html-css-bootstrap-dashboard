@@ -12,14 +12,11 @@
 <body class="vh-100">
     <!-- HEADER CON NAVBAR CHE INCLUDE LOGO SEZIONE SEARCH E DELLE ICONE 10VH -->
     <header class="bg-light">
-        <nav class="navbar navbar-expand-md navbar-light h-100">
+        <nav class="navbar navbar-expand navbar-light h-100">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="logo-boolean">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
               <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <form>
@@ -28,13 +25,13 @@
                 </div>
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list d-none d-md-inline-block"></i>
                   </a>
                   <a class="nav-link" href="#">
-                    <i class="fa-solid fa-circle-question"></i>
+                    <i class="fa-solid fa-circle-question d-none d-md-inline-block"></i>
                   </a>
                   <a class="nav-link" href="#">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline-block"></i>
                   </a>
                   <a class="nav-link" href="#">
                     <i class="fa-solid fa-bell"></i>
@@ -47,7 +44,32 @@
     
     <!-- MAIN CHE COMPRENDE UNA SIDEBAR A SINISTRA E POI A DESTRA UNA RIGA CON DUE COLONNE DA 8 E 4 E SOTTOCOLONNE DA 12 CON DUE SEZIONI CIASCUNA TUTTO 90VH -->
     <main>
-
+        <div class="container-fluid d-flex h-100 w-100">
+            <!-- SEZIONE SIDEBAR -->
+            <div class="row w-100">
+                <div class="col-3 bg-dark">
+                    <section id="sidebar p-3">
+                        <div class="row flex-column h-100 justify-content-between">
+                            <div class="col-4">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-solid fa-house text-white p-2">Home</i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-solid fa-chart-simple text-white p-2">Stats</i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-solid fa-signal text-white p-2">Signals</i>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-gear text-white p-2">Admin</i>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
     </main>
 </body>
 </html>
