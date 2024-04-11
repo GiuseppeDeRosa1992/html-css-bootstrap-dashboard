@@ -3,10 +3,6 @@ header {
     height: 3rem;
 }
 
-main {
-    height: calc(100vh - 3rem);
-}
-
 main div.col-2.bg-dark.pe-0 {
     height: calc(100vh - 3rem);
 }
