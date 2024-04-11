@@ -24,7 +24,28 @@ main div.col-2.bg-dark.pe-0 {
     width: 1rem;
 }
 
+.my-w-2 {
+    width: 2rem;
+}
+
 .my-bg-dark {
     background-image: url(../img/sidebar-bg.png);
     background-color: #051E34;
+}
+
+.my-bg-blue {
+    background-color: #165BBA;
+}
+
+.dropstart ul.dropdown-menu.my-p-absolute {
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    left: auto;
+    margin-top: 0;
+    margin-right: 0.125rem;
+}
+
+.my-hover:hover {
+    background-color: lightgrey;
 }

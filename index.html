@@ -22,8 +22,9 @@
     <header class="bg-light">
         <nav class="navbar navbar-expand navbar-light h-100">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="logo-boolean">
+                <a class="navbar-brand me-2" href="#">
+                    <img src="./img/logo.svg" alt="logo-boolean" class="d-none d-md-inline-block">
+                    <img src="./img/mobile-logo.png" alt="logo-boolean-mobile" class="d-md-none my-w-2">
                 </a>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
                     <div class="input-group">
@@ -43,9 +44,18 @@
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline-block"></i>
                         </a>
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-bell"></i>
-                        </a>
+
+                        <div class="btn-group dropstart">
+                            <a class="nav-link" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </a>
+                            <ul class="dropdown-menu my-p-absolute">
+                                <li><button class="dropdown-item" type="button">Profilo</button></li>
+                                <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                                <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,33 +70,35 @@
                 <div class="col-1 my-bg-dark p-0">
                     <section id="sidebar" class="row h-100 d-flex flex-column gx-0 justify-content-between">
                         <div class="col-12 px-0 py-2 gx-0">
-                            <div class="text-center my-fs">
+                            <div class="text-center my-fs my-hover">
                                 <a href="#" class="text-decoration-none">
                                     <i class="fa-solid fa-house text-white">
-                                        <span class="ms-1 d-none d-md-inline-block">Home</span>
+                                        <span class="ms-1 d-none d-md-inline-block py-2">Home</span>
                                     </i>
                                 </a>
                             </div>
-                            <div class="text-center my-fs">
+                            <div class="text-center my-fs my-hover">
                                 <a href="#" class="text-decoration-none">
                                     <i class="fa-solid fa-chart-simple text-white">
-                                        <span class="ms-1 d-none d-md-inline-block">Stats</span>
+                                        <span class="ms-1 d-none d-md-inline-block py-2">Stats</span>
                                     </i>
                                 </a>
                             </div>
-                            <div class="text-center my-fs">
+                            <div class="text-center my-fs my-hover">
                                 <a href="#" class="text-decoration-none">
                                     <i class="fa-solid fa-signal text-white">
-                                        <span class="d-none d-md-inline-block">Signals</span>
+                                        <span class="d-none d-md-inline-block py-2">Signals</span>
                                     </i>
                                 </a>
                             </div>
                         </div>
                         <div class="col-12 gx-0 py-2">
-                            <div class="text-center my-fs">
-                                <i class="fa-solid fa-gear text-white">
-                                    <span class="ms-1 d-none d-md-inline-block">Admin</span>
-                                </i>
+                            <div class="text-center my-fs my-hover">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-solid fa-gear text-white">
+                                        <span class="ms-1 d-none d-md-inline-block">Admin</span>
+                                    </i>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -98,17 +110,16 @@
                         <section id="content-top">
                             <div class="row gx-0 py-2 bg-primary">
                                 <div class="col-6 p-0 text-white">
-                                    <h2 class="d-inline-block">Boolean</h2>
-                                    <span class="badge rounded-pill bg-secondary my-fs">Piano blaze</span> <br>
-                                    <span class="badge rounded-pill bg-secondary my-fs">3 app</span>
+                                    <h3 class="d-inline-block">Boolean</h3>
+                                    <span class="badge rounded-pill my-bg-blue my-fs">Piano blaze</span> <br>
+                                    <span class="badge rounded-pill my-bg-blue my-fs">3 app</span>
                                     <i class="fa-solid fa-angles-right my-fs"></i>
-                                    <span
-                                        class="badge rounded-pill bg-secondary my-fs d-md-none d-inline-block">+</span>
-                                    <span class="badge rounded-pill bg-secondary my-fs d-none d-md-inline-block">Boolean
+                                    <span class="badge rounded-pill my-bg-blue my-fs d-md-none d-inline-block">+</span>
+                                    <span class="badge rounded-pill my-bg-blue my-fs d-none d-md-inline-block">Boolean
                                         mobile app</span>
-                                    <span class="badge rounded-pill bg-secondary my-fs d-none d-md-inline-block">Boolean
+                                    <span class="badge rounded-pill my-bg-blue my-fs d-none d-md-inline-block">Boolean
                                         web app</span>
-                                    <span class="badge rounded-pill bg-secondary my-fs d-none d-md-inline-block">Boolean
+                                    <span class="badge rounded-pill my-bg-blue my-fs d-none d-md-inline-block">Boolean
                                         blog app</span>
                                 </div>
                                 <div class="col-4 text-white p-0">
@@ -117,53 +128,69 @@
                                 </div>
                                 <div class="col-2 text-white p-0">
                                     <span class="my-fs">Nuovo Studente</span>
-                                    <div class="dropdown d-inline-block">
-                                        <button class="btn btn-primary p-0" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
+                                    <div class="d-inline-block">
+                                        <button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasWithBothOptions"
+                                            aria-controls="offcanvasWithBothOptions">
                                             <i class="fa-regular fa-square-plus fs-5"></i>
                                         </button>
-                                        <ul class="dropdown-menu">
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">@</span>
-                                                <input type="text" class="form-control" placeholder="Username"
-                                                    aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                                            id="offcanvasWithBothOptions"
+                                            aria-labelledby="offcanvasWithBothOptionsLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci
+                                                    un nuovo studente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
                                             </div>
+                                            <div class="offcanvas-body">
+                                                <div tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" placeholder="Username"
+                                                            aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
 
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control"
-                                                    placeholder="Recipient's username" aria-label="Recipient's username"
-                                                    aria-describedby="basic-addon2">
-                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                            </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Recipient's username"
+                                                            aria-label="Recipient's username"
+                                                            aria-describedby="basic-addon2">
+                                                        <span class="input-group-text"
+                                                            id="basic-addon2">@example.com</span>
+                                                    </div>
 
-                                            <label for="basic-url" class="form-label">Your vanity URL</label>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text"
-                                                    id="basic-addon3">https://example.com/users/</span>
-                                                <input type="text" class="form-control" id="basic-url"
-                                                    aria-describedby="basic-addon3">
-                                            </div>
+                                                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text"
+                                                            id="basic-addon3">https://example.com/users/</span>
+                                                        <input type="text" class="form-control" id="basic-url"
+                                                            aria-describedby="basic-addon3">
+                                                    </div>
 
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text">$</span>
-                                                <input type="text" class="form-control"
-                                                    aria-label="Amount (to the nearest dollar)">
-                                                <span class="input-group-text">.00</span>
-                                            </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text">$</span>
+                                                        <input type="text" class="form-control"
+                                                            aria-label="Amount (to the nearest dollar)">
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
 
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" placeholder="Username"
-                                                    aria-label="Username">
-                                                <span class="input-group-text">@</span>
-                                                <input type="text" class="form-control" placeholder="Server"
-                                                    aria-label="Server">
-                                            </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" placeholder="Username"
+                                                            aria-label="Username">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="text" class="form-control" placeholder="Server"
+                                                            aria-label="Server">
+                                                    </div>
 
-                                            <div class="input-group">
-                                                <span class="input-group-text">With textarea</span>
-                                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">With textarea</span>
+                                                        <textarea class="form-control"
+                                                            aria-label="With textarea"></textarea>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -410,7 +437,7 @@
                                                             type="button" data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseOne" aria-expanded="false"
                                                             aria-controls="flush-collapseOne">
-                                                            <span>Coma aggiungere un nuovo studente?</span>
+                                                            <span class="fs-6">Coma aggiungere un nuovo studente?</span>
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -428,8 +455,8 @@
                                                             type="button" data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                                             aria-controls="flush-collapseTwo">
-                                                            <span>Come posso accedere alle informazioni del mio
-                                                                account?</span>
+                                                            <span class="fs-6">Come posso accedere alle informazioni del
+                                                                mio account?</span>
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -448,17 +475,18 @@
                                                             type="button" data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                                                             aria-controls="flush-collapseThree">
-                                                            <span>Posso usare questa dashboard da mobile?</span>
+                                                            <span class="fs-6">Posso usare questa dashboard da
+                                                                mobile?</span>
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">Placeholder content for this
-                                                            accordion, which is intended to demonstrate the
-                                                            <code>.accordion-flush</code> class. This is the third
-                                                            item's accordion body. Nothing more exciting happening here
-                                                            in terms of content, but just filling up the space to make
-                                                            it look, at least at first glance, a bit more representative
+                                                            accordion, which is intended to demonstrate ths
+                                                            <code>.accordion-flush</code> class. This is the thirs
+                                                            item's accordion body. Nothing more exciting happening hers
+                                                            in terms of content, but just filling up the space to maks
+                                                            it look, at least at first glance, a bit more representativs
                                                             of how this would look in a real-world application.
                                                         </div>
                                                     </div>
@@ -519,12 +547,13 @@
                                             <!-- CONTENT CARD STATISTICHE -->
                                             <div class="card-body">
                                                 <h5 class="card-title my-fs p-1">Utenti attivi</h5>
-                                                <p class="card-text my-fs p-1">Lista degli utenti attivi in piattaforma nell'ulitmo mese</p>
+                                                <p class="card-text my-fs p-1">Lista degli utenti attivi in piattaforma
+                                                    nell'ulitmo mese</p>
                                             </div>
                                             <ul class="list-group list-group-flush p-1">
-                                                <li class="list-group-item p-1 my-fs">Gennaio: 1200</li>
-                                                <li class="list-group-item p-1 my-fs">Febbraio: 800</li>
-                                                <li class="list-group-item p-1 my-fs">Marzo: 1500</li>
+                                                <li class="list-group-item p-1 my-fs py-3">Gennaio: 1200</li>
+                                                <li class="list-group-item p-1 my-fs py-3">Febbraio: 800</li>
+                                                <li class="list-group-item p-1 my-fs py-3">Marzo: 1500</li>
                                             </ul>
                                             <div class="card-body p-1">
                                                 <a href="#" class="card-link my-fs">Visualizza report approfondito</a>
