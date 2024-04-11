@@ -1,18 +1,18 @@
 /*********************** CSS UTILI ***********************/
 header {
-    height: 8vh;
+    height: 3rem;
 }
 
 main {
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 3rem);
 }
 
 main div.col-2.bg-dark.pe-0 {
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 3rem);
 }
 
 .vh-90 {
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 3rem);
     overflow: auto;
 }
 
@@ -20,6 +20,11 @@ main div.col-2.bg-dark.pe-0 {
     font-size: 0.6rem;
 }
 
-.my-w-10 {
-    width: 10%;
+.my-w-1 {
+    width: 1rem;
+}
+
+.my-bg-dark {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
 }
