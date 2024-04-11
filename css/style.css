@@ -33,6 +33,10 @@ main div.col-2.bg-dark.pe-0 {
     background-color: #165BBA;
 }
 
+.my-btn {
+    border-radius: 0;
+}
+
 .dropstart ul.dropdown-menu.my-p-absolute {
     position: absolute;
     top: 80%;
@@ -44,4 +48,22 @@ main div.col-2.bg-dark.pe-0 {
 
 .my-hover:hover {
     background-color: lightgrey;
+}
+
+.modal-backdrop.show.fade {
+    opacity: 0;
+}
+
+/************** CSS MEDIA QUERY *****************/
+
+@media all and (max-width: 576px) {
+    #offcanvasWithBothOptions {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 576px) {
+    #offcanvasWithBothOptions {
+        width: 55%;
+    }
 }

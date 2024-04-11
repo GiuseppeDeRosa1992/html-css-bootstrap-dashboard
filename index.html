@@ -46,8 +46,7 @@
                         </a>
 
                         <div class="btn-group dropstart">
-                            <a class="nav-link" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell text-warning"></i>
                             </a>
                             <ul class="dropdown-menu my-p-absolute">
@@ -141,52 +140,103 @@
                                                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci
                                                     un nuovo studente</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                                    aria-label="Close"></button>
+                                                    aria-label="Close">
+                                                </button>
                                             </div>
                                             <div class="offcanvas-body">
-                                                <div tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                                        <input type="text" class="form-control" placeholder="Username"
-                                                            aria-label="Username" aria-describedby="basic-addon1">
+                                                <div tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"
+                                                    class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Nome</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
                                                     </div>
-
-                                                    <div class="input-group mb-3">
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Recipient's username"
-                                                            aria-label="Recipient's username"
-                                                            aria-describedby="basic-addon2">
-                                                        <span class="input-group-text"
-                                                            id="basic-addon2">@example.com</span>
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Cognome</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
                                                     </div>
-
-                                                    <label for="basic-url" class="form-label">Your vanity URL</label>
-                                                    <div class="input-group mb-3">
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Password</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Indirizzo
+                                                            Mail</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <label for="basic-addon1" class="form-label">Password</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <label for="basic-url" class="form-label">Indirizzo</label>
+                                                    <div class="input-group mb-3 col-12">
+                                                        <input type="text" class="form-control" id="basic-url"
+                                                            aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="col-12 col-sm-5">
+                                                        <label for="basic-addon1" class="form-label">Città</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4">
+                                                        <label for="basic-addon1" class="form-label">Stato</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-3">
+                                                        <label for="basic-addon1" class="form-label">CAP</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3 col-12">
                                                         <span class="input-group-text"
                                                             id="basic-addon3">https://example.com/users/</span>
                                                         <input type="text" class="form-control" id="basic-url"
                                                             aria-describedby="basic-addon3">
                                                     </div>
-
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text">$</span>
-                                                        <input type="text" class="form-control"
-                                                            aria-label="Amount (to the nearest dollar)">
-                                                        <span class="input-group-text">.00</span>
-                                                    </div>
-
-                                                    <div class="input-group mb-3">
-                                                        <input type="text" class="form-control" placeholder="Username"
-                                                            aria-label="Username">
-                                                        <span class="input-group-text">@</span>
-                                                        <input type="text" class="form-control" placeholder="Server"
-                                                            aria-label="Server">
-                                                    </div>
-
-                                                    <div class="input-group">
+                                                    <div class="input-group col-12">
                                                         <span class="input-group-text">With textarea</span>
                                                         <textarea class="form-control"
                                                             aria-label="With textarea"></textarea>
+                                                    </div>
+                                                    <div class="col-6 col-sm-2 mt-2 g-0 px-1">
+                                                        <a href="#">
+                                                            <button type="button" class="btn btn-danger">Danger</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6 col-sm-2 mt-2 gx-5 mx-2">
+                                                        <a href="#">
+                                                            <button type="button" class="btn btn-warning">Warning</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -236,11 +286,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -261,11 +311,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1  my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -286,11 +336,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -311,11 +361,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -336,11 +386,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -361,11 +411,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -386,11 +436,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
@@ -411,11 +461,11 @@
                                                         </td>
                                                         <td class="my-fs py-1 px-1 my-fs align-middle">
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-pen"></i>
                                                             </button>
                                                             <button type="button"
-                                                                class="btn btn-outline-dark p-1 my-fs">
+                                                                class="btn btn-outline-dark my-btn p-1 my-fs">
                                                                 <i class="fa-solid fa-trash"></i>
                                                             </button>
                                                         </td>
